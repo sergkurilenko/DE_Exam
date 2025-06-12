@@ -1,0 +1,5 @@
+apache-airflow==2.6.3
+pandas==2.0.3
+scikit-learn==1.2.2
+boto3==1.28.20
+pyyaml==6.0

@@ -1,0 +1,17 @@
+# Источник данных
+source_url: "https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/wdbc.data"
+# Пути
+raw_data_path: "data/raw/wdbc.data"
+processed_data_path: "data/processed/data.csv"
+model_path: "results/model.pkl"
+metrics_path: "results/metrics.json"
+# Параметры модели
+model:
+  random_state: 42
+  C: 1.0
+# Интеграция с S3
+s3:
+  bucket: "your-bucket-name"
+  prefix: "etl-results"
+aws:
+  region: "us-east-1"
