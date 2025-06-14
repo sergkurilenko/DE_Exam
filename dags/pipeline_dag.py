@@ -29,11 +29,11 @@ dag = DAG(
     'pipeline_dag',
     default_args=default_args,
     description='ETL-пайплайн для диагностики заболеваний',
-    schedule_interval='@daily',
+    schedule='@daily',
     catchup=False
 )
 
-config_path = os.path.join(PROJECT_DIR, 'config.yaml')
+config_path = os.path.join(PROJECT_DIR, 'config', 'config.yaml')
 
 extract = PythonOperator(
     task_id='extract',
